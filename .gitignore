@@ -1,7 +1,17 @@
-# VS CMake default output
-/.vs/
-/out/
-/CMakeSettings.json
+# Directories
+.vs/
+bin/
+lib/
+x64/
 
-# Mac OS X rubbish
-.DS_Store
+# Files
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+*.sln
+*.log
+# Makefile
+
+# Exclude
+!build
+

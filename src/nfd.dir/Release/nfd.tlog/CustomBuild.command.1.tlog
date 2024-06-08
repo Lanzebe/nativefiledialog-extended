@@ -1,0 +1,10 @@
+^C:\USERS\EBERS\DOCUMENTS\GITHUB REPOSITORIES\SKERP\EXTERN\NFD\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ebers/Documents/GitHub Repositories/SKERP/extern/nfd" "-BC:/Users/ebers/Documents/GitHub Repositories/SKERP/extern/nfd" --check-stamp-file "C:/Users/ebers/Documents/GitHub Repositories/SKERP/extern/nfd/src/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
